@@ -1,0 +1,4 @@
+Average Flipper Length (mm): 200.92
+Average Body Mass (g): 4201.75
+Average Bill Length (mm): 43.92
+Average Bill Depth (mm): 17.15
