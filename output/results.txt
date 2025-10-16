@@ -2,3 +2,5 @@ Average Flipper Length (mm): 200.92
 Average Body Mass (g): 4201.75
 Average Bill Length (mm): 43.92
 Average Bill Depth (mm): 17.15
+Male Percentage: 50.45
+Species Yield > 5t/ha: {'Adelie': 0.0, 'Gentoo': 49.59, 'Chinstrap': 0.0}

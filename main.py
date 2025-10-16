@@ -62,8 +62,7 @@ def calculate_avg_bill_depth(data):
 
 
 # SECTION FOR DONOVAN
-# def calculate_male_percentage(data):
-def write_results(results_dict, filename):
+def calculate_male_percentage(data):
     males = 0
     known = 0
     for row in data:
@@ -76,7 +75,7 @@ def write_results(results_dict, filename):
 
 # def calculate_species_yield(data):
 def calculate_species_yield(data):
-    species_stats = {}  # species -> [num_heavy, total]
+    species_stats = {} 
     for row in data:
         species = row.get('species')
         mass = row.get('body_mass_g')
@@ -152,6 +151,11 @@ def main():
 
     write_results(results, "output/results.txt")
     run_tests(data)
+
+def write_results(results, filename):
+    with open(filename, "w") as f:
+        for key, value in results.items():
+            f.write(f"{key}: {value}\n")
 
 if __name__ == "__main__":
     main()
